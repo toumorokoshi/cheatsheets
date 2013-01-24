@@ -6,6 +6,10 @@
 \usepackage{amsmath,amsthm,amsfonts,amssymb}
 \usepackage{color,graphicx,overpic}
 \usepackage{hyperref}
+% need nice looking tables
+\usepackage{booktabs}
+% Need colors up in here
+\usepackage{color, colortbl}
 
 
 \pdfinfo{
@@ -25,6 +29,12 @@
         {\geometry{top=1cm,left=1cm,right=1cm,bottom=1cm} }
         {\geometry{top=1cm,left=1cm,right=1cm,bottom=1cm} }
     }
+
+% define some colors here
+\definecolor{Gray}{gray}{0.9}
+\definecolor{LightCyan}{rgb}{0.88, 1, 1}
+% defining column types for colors
+\newcolumntype{g}{>{\columncolor{Gray}}c}
 
 % Turn off header and footer
 \pagestyle{empty}
@@ -74,12 +84,22 @@
 \setlength{\multicolsep}{1pt}
 \setlength{\columnsep}{2pt}
 
-\begin{center}
-     \Large{\underline{Ruby}} \\
-\end{center}
+% Title of the cheatsheet, need to find a good place to put it.
+%\begin{center}
+%     \Large{\underline{Ruby}} \\
+%\end{center}
 
 \section{Basic Conditionals}
-\subsection{If loop}
+
+\begin{tabular}{@{}llr@{}} \toprule
+Animal & Description & Price (\$) \\ \midrule
+\rowcolor{LightCyan}
+Gnat & per gram & 13.65 \\
+Gnu  & stuffed & 92.50 \\
+\rowcolor{LightCyan}
+Emu  & stuffed & 33.33 \\
+Armadillo & frozen & 8.99 \\ \bottomrule
+\end{tabular}
 \subsection{String operations}
 Subsetction text
 
