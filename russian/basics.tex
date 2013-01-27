@@ -10,11 +10,13 @@
 \usepackage{booktabs}
 % Need colors up in here
 \usepackage{color, colortbl}
-% Color name set, with functionality for tables.
+% Color name set, with functionality fo
 \usepackage[usenames, dvipsnames, table]{xcolor}
-\setmainlanguage{russian}
-\setanotherlanguage{english}
 
+% Activate russian compatability
+\usepackage[T2A,T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[russian,english]{babel}
 
 \pdfinfo{
   /Title (basics.pdf)
@@ -98,8 +100,40 @@
 \toprule
 \rowcolor{red}
 Letter & Pronunciation & notes \\
-A a & ah (cAr), a (Alligator) & \\
-Б б & b (Bit) (Bat) & \\ \bottomrule
+\foreignlanguage{russian}{А а} & a, ah (cAr, Alligator) & \\ 
+\foreignlanguage{russian}{Б б} & b (Bit Bat) & \\ 
+\foreignlanguage{russian}{В в} & v (Vine, Vet, Voice) & \\ 
+\foreignlanguage{russian}{Г г} & g (Go, Guard, Good) & \\
+\foreignlanguage{russian}{Д д} & d (Do, Dog, Double) & \\
+\foreignlanguage{russian}{Е е} & hard y (Yet, Yes) & \\
+\foreignlanguage{russian}{Ё ё} & yo (York, Yolk, Yonder) & \\
+\foreignlanguage{russian}{Ж ж} & zh (meaSure, pleaSure) & \\
+\foreignlanguage{russian}{З з} & z (Zoo, Zodiac) & \\
+\foreignlanguage{russian}{И и} & ee (mE, sEE, mEEt) & \\
+\foreignlanguage{russian}{Й й} & soft y (boY, oYster, Yes) & \\
+\foreignlanguage{russian}{К к} & k (Kitten, Kite) & \\
+\foreignlanguage{russian}{Л л} & l (Lamp, Lock) & \\
+\foreignlanguage{russian}{М м} & m (Map, My, Moon) & \\
+\foreignlanguage{russian}{Н н} & n (Not, Nose, Nine) & \\
+\foreignlanguage{russian}{О о} & o (mOre, AUdio) & \\
+\foreignlanguage{russian}{П п} & p (Pet, Pot, Point) & \\
+\foreignlanguage{russian}{Р р} & r (thRiller, rolling the r) & \\
+\foreignlanguage{russian}{С с} & s (See, Sun, Soft) & \\
+\foreignlanguage{russian}{Т т} & t (Tip, Task, Time) & \\
+\foreignlanguage{russian}{У у} & oo (bOOk, bOOth) & \\
+\foreignlanguage{russian}{Ф ф} & f (Face, Fact, Force) & \\
+\foreignlanguage{russian}{Х х} & (loch with scottish accent) & \\
+\foreignlanguage{russian}{Ц ц} & ts (siTS, thaT'S) & \\
+\foreignlanguage{russian}{Ч ч} & ch (CHip, CHair) & \\
+\foreignlanguage{russian}{Ш ш} & sh (SHip, SHut, SHe) & \\
+\foreignlanguage{russian}{Щ щ} & sh + ch (freSH CHicken) & \\
+\foreignlanguage{russian}{Ы ы} & kind of like 'uee' & \\
+\foreignlanguage{russian}{Ы ы} & s (See, Sun, Soft) & \\
+\foreignlanguage{russian}{Э э} & eh (mEt, bEt) & \\
+\foreignlanguage{russian}{Ю ю} & yu (YOU, Use) & \\
+\foreignlanguage{russian}{Я я} & ya/yuh (YArd, YUmmy) & \\
+\foreignlanguage{russian}{Ь} & adds a little 'yuh' (softener) & \\
+\foreignlanguage{russian}{Ъ} & hardens & \\
 \end{tabular}
 \subsection{String Method}
 \begin{tabular}{@{}llr@{}} 
