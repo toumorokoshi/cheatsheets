@@ -1,4 +1,4 @@
-\documentclass[10pt,landscape]{article}
+\documentclass[12pt,landscape]{article}
 \usepackage{multicol}
 \usepackage{calc}
 \usepackage{ifthen}
@@ -13,10 +13,16 @@
 % Color name set, with functionality fo
 \usepackage[usenames, dvipsnames, table]{xcolor}
 
+\usepackage[scaled]{helvet}
+\renewcommand*\familydefault{\sfdefault} %% Only if the base font of the document is to be sans serif
+\usepackage[T1]{fontenc}
 % Activate russian compatability
 \usepackage[T2A,T1]{fontenc}
 \usepackage[utf8]{inputenc}
 \usepackage[russian,english]{babel}
+
+% Styling
+\fontfamily{}
 
 \pdfinfo{
   /Title (basics.pdf)
@@ -37,11 +43,13 @@
     }
 
 % define some colors here
-\definecolor{railsred}{RGB}{176, 43, 44}
+\definecolor{title}{RGB}{190, 140, 90}
+\definecolor{odd}{RGB}{255, 160, 100}
+\definecolor{even}{HTML}{ECE6DA}
 % defining column types for colors
 \newcolumntype{g}{>{\columncolor{Gray}}c}
 % defines row coloring here
-\rowcolors{2}{railsred}{Magenta}
+\rowcolors{2}{odd}{even}
 
 % Turn off header and footer
 \pagestyle{empty}
@@ -93,12 +101,12 @@
 
 % Title of the cheatsheet, need to find a good place to put it.
 %\begin{center}
-%     \Large{\underline{Ruby}} \\
+%     \Large{\underline{Russian}} \\
 %\end{center}
 \subsection{Pronunciation}
 \begin{tabular}{@{}llr@{}} 
 \toprule
-\rowcolor{red}
+\rowcolor{title}
 Letter & Pronunciation & notes \\
 \foreignlanguage{russian}{А а} & a, ah (cAr, Alligator) & \\ 
 \foreignlanguage{russian}{Б б} & b (Bit Bat) & \\ 
@@ -135,29 +143,20 @@ Letter & Pronunciation & notes \\
 \foreignlanguage{russian}{Ь} & adds a little 'yuh' (softener) & \\
 \foreignlanguage{russian}{Ъ} & hardens & \\
 \end{tabular}
-\subsection{String Method}
+\subsection{Basic Sentences}
 \begin{tabular}{@{}llr@{}} 
 \toprule
-capitalize(!) & Capitalizes string \\
-center & \\
-chomp(!) & \\
-concat X& concats X to string\\
-count & \\
-capitalize(!) & Capitalizes string \\
-capitalize(!) & Capitalizes string \\
-capitalize(!) & Capitalizes string \\
-Emu  & stuffed & 33.33 \\
-Armadillo & frozen & 8.99 \\ \bottomrule
+The apple is red & \foreignlanguage{russian}{яблоко красное}\\
+It is John's apple & \foreignlanguage{russian}{Это яблоко Джона}\\
+I give John the apple & \foreignlanguage{russian}{Я дал яблоко Джон}\\
+We give him the apple & \foreignlanguage{russian}{Мы дали яблоко ему}\\
+He gives it to John & \foreignlanguage{russian}{Он дал его Джону}\\
+She gives it to him & \foreignlanguage{russian}{Она дала это ему}\\
+I must give it to him & \foreignlanguage{russian}{Я должен дать это ему}\\
+I want to give it to her & \foreignlanguage{russian}{Я хочу дать это ей}\\
 \end{tabular}
 
-\section{Section 2}
-Text 2
-
-\section{Section 3}
-Etc.
-
 % You can even have references
-\rule{0.3\linewidth}{0.25pt}
 \scriptsize
 \bibliographystyle{abstract}
 \bibliography{refFile}
