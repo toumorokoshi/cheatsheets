@@ -53,20 +53,20 @@
 \pagestyle{empty}
 
 % Redefine section commands to use less space
-\makeatletter
-\renewcommand{\section}{\@startsection{section}{1}{0mm}%
-                                {-1ex plus -.5ex minus -.2ex}%
-                                {0.5ex plus .2ex}%x
-                                {\normalfont\large\bfseries}}
-\renewcommand{\subsection}{\@startsection{subsection}{2}{0mm}%
-                                {-1explus -.5ex minus -.2ex}%
-                                {0.5ex plus .2ex}%
-                                {\normalfont\normalsize\bfseries}}
-\renewcommand{\subsubsection}{\@startsection{subsubsection}{3}{0mm}%
-                                {-1ex plus -.5ex minus -.2ex}%
-                                {1ex plus .2ex}%
-                                {\normalfont\small\bfseries}}
-\makeatother
+% \makeatletter
+% \renewcommand{\section}{\@startsection{section}{1}{0mm}%
+%                                 {-1ex plus -.5ex minus -.2ex}%
+%                                 {0.5ex plus .2ex}%x
+%                                 {\normalfont\large\bfseries}}
+% \renewcommand{\subsection}{\@startsection{subsection}{2}{0mm}%
+%                                 {-1explus -.5ex minus -.2ex}%
+%                                 {0.5ex plus .2ex}%
+%                                 {\normalfont\normalsize\bfseries}}
+% \renewcommand{\subsubsection}{\@startsection{subsubsection}{3}{0mm}%
+%                                 {-1ex plus -.5ex minus -.2ex}%
+%                                 {1ex plus .2ex}%
+%                                 {\normalfont\small\bfseries}}
+% \makeatother
 
 % Define BibTeX command
 \def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
@@ -86,7 +86,7 @@
 \begin{document}
 \raggedright
 \footnotesize
-\begin{multicols}{3}
+%\begin{multicols}{3}
 
 
 % multicol parameters
@@ -103,11 +103,27 @@
 %\end{center}
 \subsection{Pronunciation}
 \begin{CJK}{UTF8}{min}
+\begin{table}
 \begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|} 
 \toprule
 \rowcolor{title}
 vowel suffix & A & K & S/Z & T & N & H/B & M & Y & (between R and L) & W & N \\
 ah & あ & か & さ & た & な & は & ま & や & ら & わ & ん \\
+ee & い & き & し & ち & に & ひ & み &    & り & ゐ  & \\
+oo & う & く & す & つ & ぬ & ふ & む & ゆ & る & & \\
+eh & え & け & せ & て & ね & へ & め &    & れ & ゑ & \\
+oh & お & こ & そ & と & の & ほ & も & よ & ろ & を & \\
+\end{tabular}
+\end{table}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|} 
+\toprule
+\rowcolor{title}
+vowel suffix & A & K & S/Z & T & N & H/B & M & Y & (between R and L) & W & N \\
+ah & あ & か & さ & た & な & は & ま & や & ら & わ & ん \\
+ee & い & き & し & ち & に & ひ & み &    & り & ゐ  & \\
+oo & う & く & す & つ & ぬ & ふ & む & ゆ & る & & \\
+eh & え & け & せ & て & ね & へ & め &    & れ & ゑ & \\
+oh & お & こ & そ & と & の & ほ & も & よ & ろ & を & \\
 \end{tabular}
 \end{CJK}
 \subsection{Basic Sentences}
@@ -119,5 +135,5 @@ ah & あ & か & さ & た & な & は & ま & や & ら & わ & ん \\
 \scriptsize
 \bibliographystyle{abstract}
 \bibliography{refFile}
-\end{multicols}
+%\end{multicols}
 \end{document}
