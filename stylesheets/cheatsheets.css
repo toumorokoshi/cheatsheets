@@ -1,0 +1,6 @@
+li:nth-child(even) {
+   background-color:SandyBrown;
+}
+li {
+   background-color:Goldenrod;
+}
