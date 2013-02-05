@@ -1,7 +1,17 @@
 li:nth-child(even) {
    background-color:#CCCCCC;
 }
+
 li {
    padding:5px;
    margin-bottom:0;
+}
+
+tr {
+  border-bottom:1px solid black;
+}
+
+td, th {
+  border-right:1px solid black;
+  padding:5px;
 }
