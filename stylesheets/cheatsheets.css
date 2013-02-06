@@ -3,7 +3,7 @@ li:nth-child(even) {
 }
 
 li {
-   padding:3px;
+   padding:5px;
    margin-bottom:0;
 }
 
@@ -12,5 +12,5 @@ tr {
 
 td, th {
   border:1px solid black;
-  padding:5px;
+  padding:3px;
 }
