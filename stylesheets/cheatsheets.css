@@ -8,10 +8,9 @@ li {
 }
 
 tr {
-  border-bottom:1px solid black;
 }
 
 td, th {
-  border-right:1px solid black;
+  border:1px solid black;
   padding:5px;
 }
