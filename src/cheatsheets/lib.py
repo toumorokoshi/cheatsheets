@@ -3,9 +3,12 @@ Library file for cheatsheets
 """
 from docutils.frontend import OptionParser
 from docutils.parsers.rst import Parser
+from docutils.core import publish_string
 from docutils.utils import new_document
 
 from jinja2 import Template
+
+from cheatsheetwriter import CheatsheetWriter, CheatsheetHTMLTranslator
 
 example_cheatsheet_object = {
     "title": "Unix Tips and Tricks",
@@ -16,7 +19,6 @@ example_cheatsheet_object = {
          "parts": [
            {"type": "list",
              "rows": [
-               "row": "* $ sed -i s/SEARCH_PATTERN/REPLACE_PATTERN/g FILE_NAME: replace SEARCH_PATTERN with REPLACE_PATTERN is FILE_NAME"
            ]}
          ]
         }
@@ -34,8 +36,9 @@ def generate_page(source_path, template_path, output_path):
     # generates a blank document
     document = new_document(f.name, settings)
     # build document with output from parser.
-    Parser().parse(f.read(), document)
-    output = render_cheatsheet(document, template_path)
+    #Parser().parse(f.read(), document)
+    #output = render_cheatsheet(document, template_path)
+    output = publish_string(f.read(), writer=CheatsheetWriter())
     open(output_path, "w+").write(output.encode('utf-8'))
 
 
@@ -71,8 +74,6 @@ def build_cheatsheet_object(minidom_element, return_object):
         if 'sections' not in return_object:
             return_object['sections'] = []
         section_dict = {}
-        for
-        build_cheatsheet_object(
 
 
 def format_document(minidom_document):
@@ -85,7 +86,6 @@ def format_document(minidom_document):
         len(root.getElementsByTagName("table")) > 0 else None)
     if(root_table):
         parse_attribute_table(root_table, return_object)
-    import pdb; pdb.set_trace()
     """for c in docutil_document.nodeList:
         if c.tagname == "table":
             parse_attribute_table(c, return_object)
