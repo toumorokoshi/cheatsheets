@@ -9,3 +9,4 @@ _*
 eggs/
 bin/
 parts/
+build/
