@@ -3,4 +3,9 @@
 *.log
 *.aux
 *.out
+*.pyc
 _*
+.installed.cfg
+eggs/
+bin/
+parts/
