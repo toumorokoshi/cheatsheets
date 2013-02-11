@@ -1,3 +1,6 @@
 [submodule "skeleton"]
 	path = skeleton
 	url = git://github.com/dhgamache/Skeleton.git
+[submodule "source/cheatsheetsstatic/skeleton"]
+	path = source/cheatsheetsstatic/skeleton
+	url = git://github.com/dhgamache/Skeleton.git
