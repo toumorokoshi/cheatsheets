@@ -139,6 +139,7 @@ class CheatsheetHTMLTranslator(html4css1.HTMLTranslator):
     def __init__(self, document):
         html4css1.HTMLTranslator.__init__(self, document)
         self.meta.append(self.meta_viewport)
+        self.head = self.meta[:]
         pass
 
     def visit_start_of_file(self, node):
