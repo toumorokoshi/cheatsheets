@@ -7,6 +7,7 @@
 _*
 .installed.cfg
 eggs/
+develop-eggs/
 bin/
 parts/
 build/
