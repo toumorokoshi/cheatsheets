@@ -5,7 +5,7 @@ git checkout gh-pages
 # sync it
 git pull origin gh-pages
 # move build up a directory
-mv build/* .
+mv -f build/* .
 # remove build directory
 rm -r build/
 # add everything
