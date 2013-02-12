@@ -175,10 +175,28 @@ class CheatsheetHTMLTranslator(html4css1.HTMLTranslator):
         else:
             html4css1.HTMLTranslator.visit_subtitle(self, node)
 
+    def section_width(self, section_node):
+        """
+        Get the desired section width for the cheatsheet.
+        The default is 1/3rd, and will expand to 1/2 or 1 depending
+        on:
+
+        * table size: more than 10 columns = 1/2
+        """
+        has_table = section_node.first_child_matching_class(nodes.table)
+        if has_table:
+            # get table node, then tgroup node, then get it's lengths
+            column_count = len(section_node.children[has_table].children[0].children)
+            if column_count > 10:
+                return "eight columns"
+            if column_count > 20:
+                return "sixteen columns"
+        return "one-third column"
+
     def visit_section(self, node):
         self.section_level += 1
         self.body.append(
-            self.starttag(node, 'div', CLASS='section one-third column'))
+            self.starttag(node, 'div', CLASS="section " + self.section_width(node)))
 
     def depart_start_of_file(self, node):
         pass

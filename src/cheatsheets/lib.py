@@ -22,8 +22,8 @@ def generate_page(source_path, template_path, output_path):
     # build document with output from parser.
     #Parser().parse(f.read(), document)
     #output = render_cheatsheet(document, template_path)
-    output = publish_string(f.read(), writer=CheatsheetWriter())
-    open(output_path, "w+").write(output.encode('utf-8'))
+    output = publish_string(f.read().decode('utf-8'), writer=CheatsheetWriter())
+    open(output_path, "w+").write(output)
 
 
 def find_text_node(minidom_node):
