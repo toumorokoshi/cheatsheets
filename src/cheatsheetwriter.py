@@ -160,10 +160,10 @@ class CheatsheetHTMLTranslator(html4css1.HTMLTranslator):
             self.in_document_title = len(self.body)
             self.context.append("</h1><hr/></div>\n")
         elif isinstance(node.parent, nodes.section):
-            self.body.append("<h2>")
+            self.body.append("<h3>")
             #self.body.append(self.starttag(node, 'h1', '', CLASS='title'))
             self.in_document_title = len(self.body)
-            self.context.append("</h2>\n")
+            self.context.append("</h3>\n")
         else:
             html4css1.HTMLTranslator.visit_title(self, node)
 
