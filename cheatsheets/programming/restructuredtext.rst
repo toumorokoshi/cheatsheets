@@ -16,3 +16,9 @@ From highest to lowest, the document structure goes:
 * ==== (after) : heading
 * ---- (after) : sub-heading
 
+
+Tables
+======
+
+Tables are just crazy.
+
