@@ -1,0 +1,164 @@
+\documentclass[12pt,landscape]{article}
+\usepackage{multicol}
+\usepackage{calc}
+\usepackage{ifthen}
+\usepackage[landscape]{geometry}
+\usepackage{amsmath,amsthm,amsfonts,amssymb}
+\usepackage{color,graphicx,overpic}
+\usepackage{hyperref}
+% need nice looking tables
+\usepackage{booktabs}
+% Need colors up in here
+\usepackage{color, colortbl}
+% Color name set, with functionality fo
+\usepackage[usenames, dvipsnames, table]{xcolor}
+
+\usepackage[scaled]{helvet}
+\renewcommand*\familydefault{\sfdefault} %% Only if the base font of the document is to be sans serif
+\usepackage[T1]{fontenc}
+% Activate russian compatability
+\usepackage[T2A,T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[russian,english]{babel}
+
+% Styling
+\fontfamily{}
+
+\pdfinfo{
+  /Title (basics.pdf)
+  /Creator (TeX)
+  /Producer (pdfTeX 1.40.0)
+  /Author (toumorokoshi)
+  /Subject (Example)
+  /Keywords (pdflatex, latex, pdftex, tex)}
+
+% This sets page margins to .5 inch if using letter paper, and to 1cm
+% if using A4 paper. (This probably isn't strictly necessary.)
+% If using another size paper, use default 1cm margins.
+\ifthenelse{\lengthtest { \paperwidth = 11in}}
+    { \geometry{top=.5in,left=.5in,right=.5in,bottom=.5in} }
+    {\ifthenelse{ \lengthtest{ \paperwidth = 297mm}}
+        {\geometry{top=1cm,left=1cm,right=1cm,bottom=1cm} }
+        {\geometry{top=1cm,left=1cm,right=1cm,bottom=1cm} }
+    }
+
+% define some colors here
+\definecolor{title}{RGB}{190, 140, 90}
+\definecolor{odd}{RGB}{255, 160, 100}
+\definecolor{even}{HTML}{ECE6DA}
+% defining column types for colors
+\newcolumntype{g}{>{\columncolor{Gray}}c}
+% defines row coloring here
+\rowcolors{2}{odd}{even}
+
+% Turn off header and footer
+\pagestyle{empty}
+
+% Redefine section commands to use less space
+\makeatletter
+\renewcommand{\section}{\@startsection{section}{1}{0mm}%
+                                {-1ex plus -.5ex minus -.2ex}%
+                                {0.5ex plus .2ex}%x
+                                {\normalfont\large\bfseries}}
+\renewcommand{\subsection}{\@startsection{subsection}{2}{0mm}%
+                                {-1explus -.5ex minus -.2ex}%
+                                {0.5ex plus .2ex}%
+                                {\normalfont\normalsize\bfseries}}
+\renewcommand{\subsubsection}{\@startsection{subsubsection}{3}{0mm}%
+                                {-1ex plus -.5ex minus -.2ex}%
+                                {1ex plus .2ex}%
+                                {\normalfont\small\bfseries}}
+\makeatother
+
+% Define BibTeX command
+\def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
+    T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+
+% Don't print section numbers
+\setcounter{secnumdepth}{0}
+
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt plus 0.5ex}
+
+%My Environments
+\newtheorem{example}[section]{Example}
+% -----------------------------------------------------------------------
+
+\begin{document}
+\raggedright
+\footnotesize
+\begin{multicols}{3}
+
+
+% multicol parameters
+% These lengths are set only within the two main columns
+%\setlength{\columnseprule}{0.25pt}
+\setlength{\premulticols}{0.5pt}
+\setlength{\postmulticols}{0.5pt}
+\setlength{\multicolsep}{0.5pt}
+\setlength{\columnsep}{0.5pt}
+
+% Title of the cheatsheet, need to find a good place to put it.
+%\begin{center}
+%     \Large{\underline{Russian}} \\
+%\end{center}
+\subsection{Pronunciation}
+\begin{tabular}{@{}llr@{}} 
+\toprule
+\rowcolor{title}
+Letter & Pronunciation & notes \\
+\foreignlanguage{russian}{А а} & a, ah (cAr, Alligator) & \\ 
+\foreignlanguage{russian}{Б б} & b (Bit Bat) & \\ 
+\foreignlanguage{russian}{В в} & v (Vine, Vet, Voice) & \\ 
+\foreignlanguage{russian}{Г г} & g (Go, Guard, Good) & \\
+\foreignlanguage{russian}{Д д} & d (Do, Dog, Double) & \\
+\foreignlanguage{russian}{Е е} & hard y (Yet, Yes) & \\
+\foreignlanguage{russian}{Ё ё} & yo (York, Yolk, Yonder) & \\
+\foreignlanguage{russian}{Ж ж} & zh (meaSure, pleaSure) & \\
+\foreignlanguage{russian}{З з} & z (Zoo, Zodiac) & \\
+\foreignlanguage{russian}{И и} & ee (mE, sEE, mEEt) & \\
+\foreignlanguage{russian}{Й й} & soft y (boY, oYster, Yes) & \\
+\foreignlanguage{russian}{К к} & k (Kitten, Kite) & \\
+\foreignlanguage{russian}{Л л} & l (Lamp, Lock) & \\
+\foreignlanguage{russian}{М м} & m (Map, My, Moon) & \\
+\foreignlanguage{russian}{Н н} & n (Not, Nose, Nine) & \\
+\foreignlanguage{russian}{О о} & o (mOre, AUdio) & \\
+\foreignlanguage{russian}{П п} & p (Pet, Pot, Point) & \\
+\foreignlanguage{russian}{Р р} & r (thRiller, rolling the r) & \\
+\foreignlanguage{russian}{С с} & s (See, Sun, Soft) & \\
+\foreignlanguage{russian}{Т т} & t (Tip, Task, Time) & \\
+\foreignlanguage{russian}{У у} & oo (bOOk, bOOth) & \\
+\foreignlanguage{russian}{Ф ф} & f (Face, Fact, Force) & \\
+\foreignlanguage{russian}{Х х} & (loch with scottish accent) & \\
+\foreignlanguage{russian}{Ц ц} & ts (siTS, thaT'S) & \\
+\foreignlanguage{russian}{Ч ч} & ch (CHip, CHair) & \\
+\foreignlanguage{russian}{Ш ш} & sh (SHip, SHut, SHe) & \\
+\foreignlanguage{russian}{Щ щ} & sh + ch (freSH CHicken) & \\
+\foreignlanguage{russian}{Ы ы} & kind of like 'uee' & \\
+\foreignlanguage{russian}{Ы ы} & s (See, Sun, Soft) & \\
+\foreignlanguage{russian}{Э э} & eh (mEt, bEt) & \\
+\foreignlanguage{russian}{Ю ю} & yu (YOU, Use) & \\
+\foreignlanguage{russian}{Я я} & ya/yuh (YArd, YUmmy) & \\
+\foreignlanguage{russian}{Ь} & adds a little 'yuh' (softener) & \\
+\foreignlanguage{russian}{Ъ} & hardens & \\
+\end{tabular}
+\subsection{Basic Sentences}
+\begin{tabular}{@{}llr@{}} 
+\toprule
+The apple is red & \foreignlanguage{russian}{яблоко красное}\\
+It is John's apple & \foreignlanguage{russian}{Это яблоко Джона}\\
+I give John the apple & \foreignlanguage{russian}{Я дал яблоко Джон}\\
+We give him the apple & \foreignlanguage{russian}{Мы дали яблоко ему}\\
+He gives it to John & \foreignlanguage{russian}{Он дал его Джону}\\
+She gives it to him & \foreignlanguage{russian}{Она дала это ему}\\
+I must give it to him & \foreignlanguage{russian}{Я должен дать это ему}\\
+I want to give it to her & \foreignlanguage{russian}{Я хочу дать это ей}\\
+\end{tabular}
+
+% You can even have references
+\scriptsize
+\bibliographystyle{abstract}
+\bibliography{refFile}
+\end{multicols}
+\end{document}
