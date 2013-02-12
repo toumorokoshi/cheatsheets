@@ -10,21 +10,6 @@ from jinja2 import Template
 
 from cheatsheetwriter import CheatsheetWriter, CheatsheetHTMLTranslator
 
-example_cheatsheet_object = {
-    "title": "Unix Tips and Tricks",
-    "description": "tips, tricks, and useful commands for unix",
-    "author": "Yusuke Tsutsumi",
-    "sections": [
-        {"title": "Useful commands",
-         "parts": [
-           {"type": "list",
-             "rows": [
-           ]}
-         ]
-        }
-    ]
-}
-
 
 def generate_page(source_path, template_path, output_path):
     """
@@ -34,7 +19,6 @@ def generate_page(source_path, template_path, output_path):
     f = open(source_path, "r+")
     settings = OptionParser(components=(Parser,)).get_default_values()
     # generates a blank document
-    document = new_document(f.name, settings)
     # build document with output from parser.
     #Parser().parse(f.read(), document)
     #output = render_cheatsheet(document, template_path)
