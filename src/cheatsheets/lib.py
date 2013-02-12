@@ -13,6 +13,7 @@ from jinja2 import Template
 
 from cheatsheets.cheatsheetwriter import CheatsheetWriter
 
+
 def generate_page(source_path, output_path):
     """
     Writes a page with the source rest file source_path, using the
