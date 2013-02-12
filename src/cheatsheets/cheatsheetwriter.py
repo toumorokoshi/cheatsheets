@@ -35,9 +35,9 @@ class CheatsheetWriter(html4css1.Writer):
         'HTML-Specific Options',
         None,
         (('Specify the template file (UTF-8 encoded).  Default is "%s".'
-          % default_template_path,
+          % html4css1.Writer.default_template_path,
           ['--template'],
-          {'default': default_template_path, 'metavar': '<file>'}),
+          {'default': html4css1.Writer.default_template_path, 'metavar': '<file>'}),
         ('Specify comma separated list of stylesheet URLs. '
           'Overrides previous --stylesheet and --stylesheet-path settings.',
           ['--stylesheet'],
@@ -139,7 +139,6 @@ class CheatsheetHTMLTranslator(html4css1.HTMLTranslator):
     def __init__(self, document):
         html4css1.HTMLTranslator.__init__(self, document)
         self.meta.append(self.meta_viewport)
-        print utils.get_stylesheet_list(self.settings)
         pass
 
     def visit_start_of_file(self, node):

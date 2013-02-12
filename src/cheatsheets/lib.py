@@ -1,6 +1,9 @@
 """
 Library file for cheatsheets
 """
+import os
+import re
+
 from docutils.frontend import OptionParser
 from docutils.parsers.rst import Parser
 from docutils.core import publish_string
@@ -8,21 +11,18 @@ from docutils.utils import new_document
 
 from jinja2 import Template
 
-from cheatsheetwriter import CheatsheetWriter, CheatsheetHTMLTranslator
+from cheatsheets.cheatsheetwriter import CheatsheetWriter
 
-
-def generate_page(source_path, template_path, output_path):
+def generate_page(source_path, output_path):
     """
     Writes a page with the source rest file source_path, using the
     template template_path, and outputs it to output_path.
     """
     f = open(source_path, "r+")
-    settings = OptionParser(components=(Parser,)).get_default_values()
-    # generates a blank document
-    # build document with output from parser.
-    #Parser().parse(f.read(), document)
-    #output = render_cheatsheet(document, template_path)
     output = publish_string(f.read().decode('utf-8'), writer=CheatsheetWriter())
+    dirname = os.path.dirname(output_path)
+    if not os.path.exists(dirname):
+        os.makedirs(dirname)
     open(output_path, "w+").write(output)
 
 
