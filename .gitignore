@@ -4,3 +4,10 @@
 *.aux
 *.out
 _*
+src
+skeleton
+eggs
+parts
+develop-eggs
+bin
+.installed.cfg
