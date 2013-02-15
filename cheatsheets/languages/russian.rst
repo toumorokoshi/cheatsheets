@@ -55,10 +55,10 @@ Basic Russian Sentences
 * We give him the apple: Мы дали яблоко ему
 * He gives it to John: Он дал его Джону
 * She gives it to him: Она дала это ему
-* Is the apple red?: 
-* The apples are red: 
+* Is the apple red?: Это яблоко красное?
+* The apples are red: Эти яблоки красные
 * I must give it to him: Я должен дать это ему
 * I want to give it to her: Я хочу дать это ей
-* I'm going to know tomorrow: 
-* I have eaten that apple: 
-* I can't eat that apple: 
+* I'm going to know tomorrow: Я узнаю завтра
+* I have eaten that apple: Я ел это яблоко
+* I can't eat that apple: Я не могу есть это яблоко
