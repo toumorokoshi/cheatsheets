@@ -49,6 +49,7 @@ Letter Pronunciation
 
 Basic Russian Sentences
 =======================
+
 * The apple is red: яблоко красное
 * It is John's apple: Это яблоко Джона
 * I give John the apple: Я дал яблоко Джон
@@ -62,3 +63,61 @@ Basic Russian Sentences
 * I'm going to know tomorrow: Я узнаю завтра
 * I have eaten that apple: Я ел это яблоко
 * I can't eat that apple: Я не могу есть это яблоко
+
+Common Russian Verbs
+====================
+
+==========  =========================== ========================
+Word        Translation                 Perfect/Imperfect
+----------  --------------------------- ------------------------
+быть        to be, have                 imperfective, no pair
+сказать     to say, speak               говорить/сказать
+мочь        be able                     мочь/смочь
+говорить    to say, tell, speak         говорить/сказать
+знать       to know, be aware           знать/узнать
+стать       to become, begin, come      становиться/стать
+есть        to eat, to be               есть/съесть
+хотеть      to want, like               хотеть/захотеть
+видеть      to see                      видеть/увидеть
+идти        to go, come                 идти/пойти
+стоять      to stand, be, stand up      стоять/постоять
+думать      to think                    думать/подумать
+спросить    to ask                      спрашивать/спросить
+жить        to live                     no pair
+смотреть    to look, watch,             see смотреть/посмотреть
+сидеть      to sit                      сидеть/сесть
+понять      to understand; realize      понимать/понять
+иметь       to have, own                imperfective, no pair
+делать      to do, make                 делать/сделать
+взять       to take                     брать/взять
+сделать     to do, make, finish         делать/сделать
+понимать    to understand               понимать/понять
+казаться    to seem, appear             казаться/показаться
+давать      to give; let, allow         давать/дать
+пойти       to go                       идти/пойти
+увидеть     to see                      видеть/увидеть
+остаться    to remain, stay             оставаться/остаться
+выйти       to go out, come out, appear выходить/выйти
+дать        to give                     давать/дать
+работать    to work                     работать/отработать
+любить      to love                     любить/полюбить
+оказаться   find oneself, turn out      оказываться/оказаться
+ответить    to answer, reply            отвечать/ответить
+подумать    to think                    думать/подумать
+значить     to mean, signify            imperfective, no pair
+посмотреть  to take a look, watch       смотреть/посмотреть
+ждать       to wait                     ждать/подождать
+лежать      to lie, be situated         лежать/лечь
+найти       to find, discover, consider искать/найти
+писать      to write                    писать/написать
+решить      to decide, solve            решать/решить
+вернуться   to return                   возвращаться/вернуться
+считать     to count, consider          считать/посчитать
+помнить     to remember                 помнить/запомнить
+получить    to receive, get, obtain     получать/получить
+ходить      to go, walk                 ходить/пойти
+бывать      be, visit, happen           бывать/побывать
+прийти      to come, arrive             приходить/прийти
+узнать      to know, learn, recognize   узнавать/узнать
+заметить    to notice, observe          замечать/заметить
+==========  =========================== ========================
