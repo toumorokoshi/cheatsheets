@@ -1,0 +1,26 @@
+
+
+Options
+-------
+
+* A European call option allows a buyer to buy @ price K @ time T
+* An american call option allows a buyer to buy @ price K until time T
+* A European put allows a buyer to sell @ price K @ time T
+* An American put allows a buyer to sell @ price K @ until time T
+
+Futures
+-------
+
+Futures are a generalization of forward contracts. Futures can have a contract on anything: S%P 500 index.
+
+
+Binomial model
+--------------
+
+
+Arbitrage
+---------
+
+* Type a arbitrage is receiving something
+
+* Type b arbitrage is assuming that there is a situation where you can always profit regardless of the outcome.
