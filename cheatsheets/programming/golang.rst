@@ -31,7 +31,7 @@ The following are primitives in go:
 Standard methods
 ================
 
-for loop:
+for loop (for loops also account for while loops):
 
 .. code:: go
 
@@ -55,3 +55,9 @@ Conventions
   /* 
    this is a multiline comment
    */
+
+   
+Common actions
+==============
+
+

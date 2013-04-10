@@ -1,17 +1,63 @@
+Securities
+----------
+A Security is terminology for any financial asset. Some categories of
+securities are:
 
+Debt Securities
+###############
+Debt securities represent debt. Debt holders are typically entitled to
+the payment of the principle and/or interest.
+
+* Banknotes
+* Bonds
+* Debentures
+
+Equity Securities
+#################
+Equity securities represent a share of the of a company. Owners are considered shareholders. In the case of bankruptcy, equities are only worth the their share of the total assets of the company after all debtors have been paid. Owning the majority of the equity of a company usually entitles the holder to control of the company. 
+
+Equity also entitles the holder to a share of the profit or capital gains, in contrast to debt securities which are a hard contract.
+
+* Common Stocks
+
+Derivative Contracts
+####################
+Derivatives derive their value from the of underlying entities, such as an asset, index, or interest rate.
+
+* Forwards
+* Futures
+* Options
+* Swaps
+
+
+Fixed Income Securities
+-----------------------
+Fixed income securities guarantee a fixed cash flow. They suffer from:
+
+* Default risk: the risk that an asset will default
+* Inflation risk: the risk that an asset will devalue due it inflation
 
 Options
 -------
+An options is a contract which gives the owner the right to buy or sell an underlying asset at the specified strike price.
 
 * A European call option allows a buyer to buy @ price K @ time T
 * An american call option allows a buyer to buy @ price K until time T
 * A European put allows a buyer to sell @ price K @ time T
 * An American put allows a buyer to sell @ price K @ until time T
 
+Bonds
+-----
+A bond represents debt from an issuer to a holder. It is a debt security.
+
+Depending on the bond, issuers could be obliged to pay holders interest (known as the coupon), and/or repay the principle (the face value) at the maturity date.
+
+Bonds can be sold and transferred in secondary markets.
+
 Futures
 -------
 
-Futures are a generalization of forward contracts. Futures can have a contract on anything: S%P 500 index.
+Futures are a generalization of forward contracts. Futures can have a contract on anything: S&P 500 index.
 
 
 Binomial model
