@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="Docutils 0.10: http://docutils.sourceforge.net/" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<title>Go Language cheatsheet</title>
+<title></title>
 <style type="text/css">
 
 /*
@@ -611,60 +611,23 @@ td, th {
 </style>
 </head>
 <body>
-<div class="container" id="go-language-cheatsheet">
-<div class="sixteen columns"><h1>Go Language cheatsheet</h1><hr/></div>
-<div class="section one-third column" id="primitives">
-<h3>Primitives</h3>
-<p>The following are primitives in go:</p>
-<ul class="simple">
-<li>bool</li>
-<li>string</li>
-<li>int</li>
-<li>int8</li>
-<li>int16</li>
-<li>int32</li>
-<li>int64</li>
-<li>uint</li>
-<li>uint8</li>
-<li>uint16</li>
-<li>uint32</li>
-<li>uint64</li>
-<li>uintptr</li>
-<li>byte</li>
-<li>rune</li>
-<li>float32</li>
-<li>float64</li>
-<li>complex64</li>
-<li>complex128</li>
-</ul>
+<div class="container">
+<div class="section one-third column" id="revisions">
+<h3>Revisions</h3>
+<p>Revisions should aggregate a list of debug and bugfixes from each commit. You can build a changelog directory directly with this:</p>
+<blockquote>
+git log HEAD...0.3.9 --pretty=&quot;%s
+%b&quot;</blockquote>
 </div>
-<div class="section one-third column" id="standard-methods">
-<h3>Standard methods</h3>
-<p>for loop (for loops also account for while loops):</p>
-<pre class="code go literal-block">
-<span class="keyword">for</span> <span class="name">i</span> <span class="punctuation">:=</span> <span class="literal number integer">0</span><span class="punctuation">;</span> <span class="name">i</span> <span class="punctuation">&lt;</span> <span class="literal number integer">10</span><span class="punctuation">;</span> <span class="name">i</span><span class="punctuation">++</span> <span class="punctuation">{</span>
-  <span class="name">fmt</span><span class="punctuation">.</span><span class="name">Println</span><span class="punctuation">(</span>
-    <span class="name">pos</span><span class="punctuation">(</span><span class="name">i</span><span class="punctuation">),</span>
-    <span class="name">neg</span><span class="punctuation">(-</span><span class="literal number integer">2</span><span class="punctuation">*</span><span class="name">i</span><span class="punctuation">)</span>
-  <span class="punctuation">)</span>
-<span class="punctuation">}</span>
-</pre>
-</div>
-<div class="section one-third column" id="conventions">
-<h3>Conventions</h3>
-<ul class="simple">
-<li>Private fields and methods are lowercase, public is uppercase</li>
-<li>comments: // single line</li>
-</ul>
-<pre class="code go literal-block">
-<span class="comment multiline">/*
- this is a multiline comment
- */</span>
-</pre>
-</div>
-<div class="section one-third column" id="common-actions">
-<h3>Common actions</h3>
+<div class="section one-third column" id="committing">
+<h3>Committing</h3>
 
+<p>Commits should list the bugfixes and feature changes as a list, like so:</p>
+<pre class="code bash literal-block">
+* feature: added my feature 1
+* bugfix: squashed this bug
+* bugfix: squashed this other bug
+</pre>
 </div>
 </div>
 </body>
