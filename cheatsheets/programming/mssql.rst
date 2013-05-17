@@ -20,4 +20,7 @@ You can use joins in deletes like so:
         JOIN {{T2}} as {{t2name}}
         ON {{T1}}.Col = {{T2}}.Col
     
+Examples
+--------
 
+* Alter a table: ALTER [TABLE] ALTER COLUMN [COLUMN_NAME] [TYPE] [NULL/NOT NULL]
