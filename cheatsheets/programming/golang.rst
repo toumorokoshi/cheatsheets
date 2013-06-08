@@ -42,6 +42,14 @@ for loop (for loops also account for while loops):
     )
   }
 
+Nice way to check for errors an operate on something:
+
+.. code:: go
+
+  if fileHandle, err := os.Open(filePath); err != nil {
+    // handle error
+  }
+
 
 
 Conventions
@@ -56,8 +64,24 @@ Conventions
    this is a multiline comment
    */
 
-   
-Common actions
-==============
 
+Structs
+=======
 
+initializing a struct:
+
+.. code:: go
+
+  type MyStruct struct {
+    elementA string
+    elementB int
+    ElementC uint // capitalize for public access
+  }
+
+Adding a method:
+
+.. code:: go
+
+  func (m *MyStruct) Method string {
+    return m.elementA
+  }
