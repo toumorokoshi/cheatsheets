@@ -1,5 +1,5 @@
 .. Cheatsheets documentation master file, created by
-   sphinx-quickstart on Sun Feb 10 20:29:44 2013.
+   sphinx-quickstart on Mon Sep 16 23:33:22 2013.
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
@@ -9,10 +9,11 @@ Welcome to Cheatsheets's documentation!
 Contents:
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
 
-   programming/restructuredtext
-   programming/unix
+   russian   
+
+
 
 Indices and tables
 ==================
