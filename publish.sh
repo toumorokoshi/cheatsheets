@@ -1,4 +1,6 @@
 # build files
+python bootstrap.py
+./bin/buildout
 ./bin/render
 # checkout gh-pages
 git checkout gh-pages
