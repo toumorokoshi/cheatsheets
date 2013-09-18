@@ -1,14 +1,12 @@
-===============
-reStructerdText
+reStructuredText
 ===============
 
----------------------------------
 A cheatsheet for reStructeredText
 ---------------------------------
 
 
-Document Structure
-==================
+### Document Structure
+
 From highest to lowest, the document structure goes:
 
 * ==== (before and after) : section title
@@ -17,8 +15,7 @@ From highest to lowest, the document structure goes:
 * ---- (after) : sub-heading
 
 
-Tables
-======
+### Tables
 
 Tables are just crazy.
 

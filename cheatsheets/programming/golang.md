@@ -1,10 +1,9 @@
-======================
 Go Language cheatsheet
 ======================
 
 
 Primitives
-==========
+----------
 
 The following are primitives in go:
 
@@ -29,7 +28,7 @@ The following are primitives in go:
 * complex128
 
 Standard methods
-================
+----------------
 
 for loop (for loops also account for while loops):
 
@@ -53,7 +52,7 @@ Nice way to check for errors an operate on something:
 
 
 Conventions
-===========
+-----------
 
 * Private fields and methods are lowercase, public is uppercase
 * comments: // single line
@@ -66,7 +65,7 @@ Conventions
 
 
 Structs
-=======
+-------
 
 initializing a struct:
 

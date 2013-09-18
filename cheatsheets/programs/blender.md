@@ -1,9 +1,8 @@
-==================
 Blender Cheatsheet
 ==================
 
 Legend
-======
+------
 
 * C = Ctrl
 * S = Shift
@@ -11,7 +10,7 @@ Legend
 * M = alt (a la emacs)
 
 Shortcuts
-=========
+---------
 
 * 0: resolve to the default
 * C-M-0: line up camera to your current view
@@ -28,7 +27,7 @@ Shortcuts
 * F12: render the model
 
 In Edit Mode
-============
+------------
 
 * C-T-1: Vertex Select
 * C-T-2: Edge Select
@@ -45,7 +44,7 @@ In Edit Mode
 * x: brings up delete menu
 
 In fly mode
-===========
+-----------
 
 * w: accelerates inward
 * s: accelerates outward
@@ -53,15 +52,13 @@ In fly mode
 * LMB: half the view
 
 In Sculpt Mode
-==============
+--------------
 
 * f: change brush size
 * S-f: change the strength of the brush (denser = stronger)
 
-
-
 When Object is Selected
-=======================
+-----------------------
 
 * g: Move object to point
 * M-g: reset object coordinate to global center
@@ -76,7 +73,7 @@ When Object is Selected
 * S-d: create a duplicate object
 
 When Dragging/Scaling an object
-=======================
+-------------------------------
 
 * x: manipulate across X axis (global coordinates)
 * x-x: manipulate across X axis (local coordinates)
@@ -86,7 +83,7 @@ When Dragging/Scaling an object
 * z-z: manipulate across Z axis (local coordinates)
 
 Terminology
-===========
+-----------
 
 * global coordinates: coordinates relative to the global world
 * local coordinates: coordinates relative to the local object 
@@ -95,13 +92,11 @@ E.G. the global coordinates of an object's Z axis is different from an
 object's Z axis once it is rotated, since the Z axis of the local
 object has been rotated.
 
-Edge Flow
----------
+### Edge Flow
 
 Edge flow means the edges of a mesh should be positioned along the
 folds so that bending doesn't crease the faces.
 
-Topology
---------
+### Topology
 
 Describes the effectiveness of the edgeflow of the lines of a mesh

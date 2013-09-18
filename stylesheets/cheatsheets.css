@@ -1,20 +1,24 @@
+ul {
+    list-style-type: none;
+}
+
 li:nth-child(even) {
-   background-color:#CCCCCC;
+    background-color:#CCCCCC;
 }
 
 li {
-   padding:5px;
-   margin-bottom:0;
+    padding:5px;
+    margin-bottom:0;
 }
 
 tr {
 }
 
 td, th {
-  border:1px solid black;
-  padding:3px;
+    border:1px solid black;
+    padding:3px;
 }
 
 .column, .columns {
-  padding-bottom:20px;
+    padding-bottom:20px;
 }
