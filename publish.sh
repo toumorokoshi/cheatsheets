@@ -1,5 +1,5 @@
 # build files
-./bin/build
+./bin/render
 # checkout gh-pages
 git checkout gh-pages
 # sync it
@@ -16,6 +16,3 @@ git commit -am "build $(date)"
 git push origin gh-pages
 # and come back to original branch
 git checkout @{-1}
-
-
-
