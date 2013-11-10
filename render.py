@@ -1,14 +1,14 @@
 import os
 import shutil
 from markdown import Markdown
+from markdown.extensions.tables import TableExtension
 from xml.etree.ElementTree import Element
 
 HEADER_TAG = 'h1'
 ARTICLE_TAG = 'h2'
 ARTICLE_TAGS = [HEADER_TAG, ARTICLE_TAG]
 BUILD_DIRECTORY = 'build'
-m = Markdown()
-m.registerExtension('tables')
+m = Markdown(['tables'])
 template = None
 with open('template.html', 'r') as fh:
     template = fh.read()
