@@ -1,7 +1,7 @@
 import os
 import shutil
+import codecs
 from markdown import Markdown
-from markdown.extensions.tables import TableExtension
 from xml.etree.ElementTree import Element
 
 HEADER_TAG = 'h1'
@@ -17,7 +17,7 @@ with open('template.html', 'r') as fh:
 def create_markdown(input_path, output_path, depth):
     title = "Cheatsheet"  # the title of the cheatsheet
     output = None
-    with open(input_path, 'r') as fh:
+    with codecs.open(input_path, mode='r', encoding="utf-8") as fh:
         tree = m.parser.parseDocument(fh.read().split("\n"))
         root_node = tree.getroot()
         new_root = Element('section')
@@ -37,7 +37,7 @@ def create_markdown(input_path, output_path, depth):
             new_root.append(div_element)
         output = m.serializer(new_root)
     if output:
-        with open(output_path, 'w+') as output_fh:
+        with codecs.open(output_path, 'w+', encoding="utf-8") as output_fh:
             output_fh.write(template.format(**{
                 'title': title,
                 'body': output,
