@@ -1,3 +1,8 @@
+Requirements
+============
+
+* Python 3
+
 Installing Cyrillic Support
 ===========================
 The russian cheatsheet needs cyrillic support. 

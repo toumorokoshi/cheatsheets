@@ -8,6 +8,7 @@ ARTICLE_TAG = 'h2'
 ARTICLE_TAGS = [HEADER_TAG, ARTICLE_TAG]
 BUILD_DIRECTORY = 'build'
 m = Markdown()
+m.registerExtension('tables')
 template = None
 with open('template.html', 'r') as fh:
     template = fh.read()
@@ -72,19 +73,19 @@ def main():
             input_path = os.path.join(dirpath, filename)
             output_directory = os.path.join(*(["build"] + directories))
             output_path = os.path.join(output_directory, output_filename)
-            print "Creating {0}...".format(output_path)
+            print("Creating {0}...".format(output_path))
             if not os.path.isdir(output_directory):
                 os.makedirs(output_directory)
             title = create_markdown(input_path, output_path, depth)
             cheatsheet_links[title] = os.path.join(*(directories + [output_filename]))
-    print "Rendering index..."
+    print("Rendering index...")
     render_index(cheatsheet_links)
     static_source = "static"
     static_target = os.path.join("build", "static")
     if os.path.exists(static_target):
-        print "Removing old statics..."
+        print("Removing old statics...")
         shutil.rmtree(static_target)
-    print "Copying statics..."
+    print("Copying statics...")
     shutil.copytree(static_source, static_target)
 
 if __name__ == '__main__':
