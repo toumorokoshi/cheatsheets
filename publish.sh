@@ -1,5 +1,5 @@
 # build files
-python bootstrap.py
+python3 bootstrap.py
 ./bin/buildout
 ./bin/render
 # checkout gh-pages
